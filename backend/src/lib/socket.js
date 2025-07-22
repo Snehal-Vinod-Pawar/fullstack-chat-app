@@ -9,7 +9,6 @@ const io = new Server(server, {
     cors: {
         origin: ["http://localhost:5173"]
     },
-    allowEIO3: true
 })
 
 export function getRecieverSocketId(userId) {
@@ -17,7 +16,7 @@ export function getRecieverSocketId(userId) {
 }
 
 //used to store online users
-const userSocketMap = {};      //{userID: socketId}
+const userSocketMap = {};      
 
 io.on("connection", (socket) => {
     console.log("A user connected",socket.id);
