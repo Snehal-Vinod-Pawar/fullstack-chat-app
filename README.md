@@ -35,4 +35,4 @@ Authentication: JWT & HTTP-only cookies
 #OUTPUT
 ## 🖼️ Preview
 
-![Chat App Screenshot](./assets/chat-preview.png)
+![Chat App Screenshot](./dist/assets/chat-preview.png)
