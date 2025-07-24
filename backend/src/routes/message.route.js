@@ -7,6 +7,6 @@ const router = express.Router();
 router.get("/users", protectRoute, getUsersForSidebar);
 router.get("/chat/:id", protectRoute, getMessages);
 
-router.post("/chat/send/:id", protectRoute, sendMessage);
+router.post("/chat/:id/send", protectRoute, sendMessage);
 
 export default router;
